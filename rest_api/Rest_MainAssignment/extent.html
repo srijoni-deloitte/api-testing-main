@@ -1,0 +1,1544 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Apr 4, 2022 12:10:33 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='57.143%'><span class='strong'>4</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='29.379%'><span class='strong'>52</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.695%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='68.927%'>122</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Main Assignment</span>
+						<span class='test-time'>Apr 4, 2022 12:10:33 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:10:33 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:12:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 22s+732ms</span>
+</div>
+	<div class='test-desc'>Test Description </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:34 PM</td>
+					<td class='step-details'>register start</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:02 PM</td>
+					<td class='step-details'>register success</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:02 PM</td>
+					<td class='step-details'>login1 start</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>login1 success</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>registerSingleUser_negativeTest start</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>registerSingleUser_negativeTest test Fail</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>neg_login_Test start</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:11:50 PM</td>
+					<td class='step-details'>neg_login_Test test Fail</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:50 PM</td>
+					<td class='step-details'>negAddTask start</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:11:53 PM</td>
+					<td class='step-details'>negAddTask test Fail</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:53 PM</td>
+					<td class='step-details'>deleteAllUsers start</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:56 PM</td>
+					<td class='step-details'>deleteAllUsers success</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  warning' status='warning' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Register UserTest</span>
+						<span class='test-time'>Apr 4, 2022 12:10:34 PM</span>
+						<span class='test-status right warning'>warning</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:10:34 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:11:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 28s+648ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:35 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:35 PM</td>
+					<td class='step-details'>{"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:10:39 PM</td>
+					<td class='step-details'>User successfully registered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:39 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:39 PM</td>
+					<td class='step-details'>{"password":"1.2345679E7","name":"Aditya Kumar","email":"ADITYAKUMAR72@DELOITTE.COM","age":27}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:10:41 PM</td>
+					<td class='step-details'>User successfully registered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:41 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:41 PM</td>
+					<td class='step-details'>{"password":"1.234568E7","name":"Deepak Maharajan M","email":"DMAHARAJANM@DELOITTE.COM","age":27}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:10:43 PM</td>
+					<td class='step-details'>User successfully registered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:43 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:43 PM</td>
+					<td class='step-details'>{"password":"1.2345681E7","name":"Kirubakaran S","email":"KIRUS@DELOITTE.COM","age":29}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:10:44 PM</td>
+					<td class='step-details'>User successfully registered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:44 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:44 PM</td>
+					<td class='step-details'>{"password":"1.2345682E7","name":"CHAMAKURI SAI KUMAR","email":"CHAMKUMAR@DELOITTE.COM","age":20}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:10:46 PM</td>
+					<td class='step-details'>User successfully registered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:46 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:46 PM</td>
+					<td class='step-details'>{"password":"99999999","name":"m suhas","email":"Suhas@DELOITTE.com","age":21}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:47 PM</td>
+					<td class='step-details'>User already present with same email i.e. Suhas@DELOITTE.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:47 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:47 PM</td>
+					<td class='step-details'>{"password":"88888888","name":"priyanka sharma","email":"priya@deloitte.com","age":30}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:49 PM</td>
+					<td class='step-details'>User already present with same email i.e. priya@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:49 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:49 PM</td>
+					<td class='step-details'>{"password":"77777777","name":"himanshu","email":"himan@deloitte.com","age":29}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:50 PM</td>
+					<td class='step-details'>User already present with same email i.e. himan@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:50 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:50 PM</td>
+					<td class='step-details'>{"password":"66666666","name":"Mohammed Saquib","email":"moha@deloitte.com","age":21}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:51 PM</td>
+					<td class='step-details'>User already present with same email i.e. moha@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:51 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:51 PM</td>
+					<td class='step-details'>{"password":"55555555","name":"kritik bansal","email":"kritik@deloitte.com","age":28}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:53 PM</td>
+					<td class='step-details'>User already present with same email i.e. kritik@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:53 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:53 PM</td>
+					<td class='step-details'>{"password":"44444444","name":"dinky arsani","email":"dinky@deloitte.com","age":29}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:54 PM</td>
+					<td class='step-details'>User already present with same email i.e. dinky@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:54 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:54 PM</td>
+					<td class='step-details'>{"password":"33333333","name":"britisha prasad singh","email":"britisha@deloitte.com","age":23}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:55 PM</td>
+					<td class='step-details'>User already present with same email i.e. britisha@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:55 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:55 PM</td>
+					<td class='step-details'>{"password":"22222222","name":"Sagar Kumar Thakur","email":"tthakur@deloitte.com","age":23}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:57 PM</td>
+					<td class='step-details'>User already present with same email i.e. tthakur@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:57 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:57 PM</td>
+					<td class='step-details'>{"password":"11111111","name":"Tarun Kumar Dhurwe","email":"TDHURWE@DELOITTE.COM","age":24}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:58 PM</td>
+					<td class='step-details'>User already present with same email i.e. TDHURWE@DELOITTE.COM</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:58 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:58 PM</td>
+					<td class='step-details'>{"password":"10000000","name":"k saravanakumar","email":"saravana@deloitte.com","age":24}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:10:59 PM</td>
+					<td class='step-details'>User already present with same email i.e. saravana@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:10:59 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:10:59 PM</td>
+					<td class='step-details'>{"password":"10000001","name":"darshan","email":"darshan@deloitte.com","age":22}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:11:01 PM</td>
+					<td class='step-details'>User already present with same email i.e. darshan@deloitte.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:01 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:01 PM</td>
+					<td class='step-details'>{"password":"10000010","name":"apurwa","email":"apurwa@gmail.com","age":22}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:11:02 PM</td>
+					<td class='step-details'>User already present with same email i.e. apurwa@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>User_session</span>
+						<span class='test-time'>Apr 4, 2022 12:11:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:11:02 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:11:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 41s+619ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:02 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:02 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345681E7","email":"KIRUS@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:04 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYzg1YTc4NDAwMTc3NmY0NjciLCJpYXQiOjE2NDkwNTQ0NjR9.0wOAZLA43AniCRqbCrV6S5stRwvDZAUi2ceTFK1A-RQ</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:04 PM</td>
+					<td class='step-details'>Login successful, user name = Kirubakaran S</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:04 PM</td>
+					<td class='step-details'>Adding all tasks</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:05 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_1"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:06 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:06 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_2"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:08 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:08 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_3"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:10 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:10 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_4"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:11 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:11 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_5"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:13 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:13 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_6"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:14 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:14 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_7"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:16 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:16 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_8"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:18 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:18 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_9"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:19 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:19 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_10"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:21 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:21 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:22 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:22 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_12"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:24 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:24 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_13"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:26 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:26 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_14"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:27 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:27 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_15"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:29 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:29 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_16"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:31 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:31 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_17"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:32 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:32 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_18"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:34 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:34 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_19"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:36 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:36 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_20"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:37 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:37 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_21"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:39 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:39 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_22"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:41 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:41 PM</td>
+					<td class='step-details'>Adding task => {"description":"add_task_23"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:42 PM</td>
+					<td class='step-details'>Task added</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:42 PM</td>
+					<td class='step-details'>All tasks added</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:42 PM</td>
+					<td class='step-details'>Getting task data by Page Limit, 2</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>Validating test response data</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>Successfully fetch 2 no of data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  warning' status='warning' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Registering_with_already_registered_user</span>
+						<span class='test-time'>Apr 4, 2022 12:11:44 PM</span>
+						<span class='test-status right warning'>warning</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:11:44 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:11:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+757ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>Testing negativeTest</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>User Registration test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:44 PM</td>
+					<td class='step-details'>{"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>User already present with same email i.e. MVSUHAS@DELOITTE.COM</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Negative Login test</span>
+						<span class='test-time'>Apr 4, 2022 12:11:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:11:48 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:11:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+65ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>Testing_for_neg_Login</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:48 PM</td>
+					<td class='step-details'>user login json data = {"password":"10000002","email":"srijochakraborty@deloitte.com"}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Negative Add Task test</span>
+						<span class='test-time'>Apr 4, 2022 12:11:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:11:50 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:11:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+270ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:50 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:50 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345678E7","email":"MVSUHAS@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:52 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlNjg1YTc4NDAwMTc3NmY0NTYiLCJpYXQiOjE2NDkwNTQ1MTJ9.e81lgdMhiDCaIdUJyxYu5T22oLb0aH_WQlYjWF4M21I</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:52 PM</td>
+					<td class='step-details'>Login successful, user name = M.V.Suhas</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:52 PM</td>
+					<td class='step-details'>Adding task => {"desc":"add_task"}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Delete_All_user</span>
+						<span class='test-time'>Apr 4, 2022 12:11:53 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 4, 2022 12:11:53 PM</span>
+	<span class='label end-time'>Apr 4, 2022 12:12:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 1s+53ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:53 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:53 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345678E7","email":"MVSUHAS@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:56 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlNjg1YTc4NDAwMTc3NmY0NTYiLCJpYXQiOjE2NDkwNTQ1MTV9.3CCw1ZduiVHSpv9oP4LcndpqWPDRSMaMjDjjZY4M0OE</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:56 PM</td>
+					<td class='step-details'>Login successful, user name = M.V.Suhas</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:56 PM</td>
+					<td class='step-details'>Deleting user = {"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:58 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:11:58 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345679E7","email":"ADITYAKUMAR72@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:59 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlODg1YTc4NDAwMTc3NmY0NWUiLCJpYXQiOjE2NDkwNTQ1MTl9.bBUvSL6T0p9L2PfdxtS6oIldxUl_CSDBrW4JjaKEdt0</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:11:59 PM</td>
+					<td class='step-details'>Login successful, user name = Aditya Kumar</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:11:59 PM</td>
+					<td class='step-details'>Deleting user = {"password":"1.2345679E7","name":"Aditya Kumar","email":"ADITYAKUMAR72@DELOITTE.COM","age":27}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:01 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:01 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.234568E7","email":"DMAHARAJANM@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:03 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYTg1YTc4NDAwMTc3NmY0NjMiLCJpYXQiOjE2NDkwNTQ1MjJ9.tRbzHaUql1atHUfiHuh0hpA2Cx9NpF5dZriV3Z1yyw0</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:03 PM</td>
+					<td class='step-details'>Login successful, user name = Deepak Maharajan M</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:03 PM</td>
+					<td class='step-details'>Deleting user = {"password":"1.234568E7","name":"Deepak Maharajan M","email":"DMAHARAJANM@DELOITTE.COM","age":27}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:05 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:05 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345681E7","email":"KIRUS@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:06 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYzg1YTc4NDAwMTc3NmY0NjciLCJpYXQiOjE2NDkwNTQ1MjZ9.pnIf0mkuewnJ6qB3Vfyorlrof7VBE5buOblyFd-qZlE</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:06 PM</td>
+					<td class='step-details'>Login successful, user name = Kirubakaran S</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:06 PM</td>
+					<td class='step-details'>Deleting user = {"password":"1.2345681E7","name":"Kirubakaran S","email":"KIRUS@DELOITTE.COM","age":29}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:09 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:09 PM</td>
+					<td class='step-details'>user login json data = {"password":"1.2345682E7","email":"CHAMKUMAR@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:10 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlZDg1YTc4NDAwMTc3NmY0NmMiLCJpYXQiOjE2NDkwNTQ1MzB9.e2reQXDdKVTBaThPLRtXS5vU4XLajcFSX5y-OXPWY-s</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:10 PM</td>
+					<td class='step-details'>Login successful, user name = CHAMAKURI SAI KUMAR</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:10 PM</td>
+					<td class='step-details'>Deleting user = {"password":"1.2345682E7","name":"CHAMAKURI SAI KUMAR","email":"CHAMKUMAR@DELOITTE.COM","age":20}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:13 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:13 PM</td>
+					<td class='step-details'>user login json data = {"password":"99999999","email":"Suhas@DELOITTE.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:15 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2NDE2YTc0ZTAwMTc0NjFkNzYiLCJpYXQiOjE2NDkwNTQ1MzR9.rSAyl_MwTqaCpxW0jIs6K25hmRjYb9z7tvJZoxS_deQ</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:15 PM</td>
+					<td class='step-details'>Login successful, user name = m suhas</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:15 PM</td>
+					<td class='step-details'>Deleting user = {"password":"99999999","name":"m suhas","email":"Suhas@DELOITTE.com","age":21}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:17 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:17 PM</td>
+					<td class='step-details'>user login json data = {"password":"88888888","email":"priya@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:19 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2NjE2YTc0ZTAwMTc0NjFkNzgiLCJpYXQiOjE2NDkwNTQ1Mzl9.BzTjhUvt9EBvURgWbzU8l_5QZCCZVjPb_StxOk-wjWw</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:19 PM</td>
+					<td class='step-details'>Login successful, user name = priyanka sharma</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:19 PM</td>
+					<td class='step-details'>Deleting user = {"password":"88888888","name":"priyanka sharma","email":"priya@deloitte.com","age":30}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:21 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:21 PM</td>
+					<td class='step-details'>user login json data = {"password":"77777777","email":"himan@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:23 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2ODE2YTc0ZTAwMTc0NjFkN2EiLCJpYXQiOjE2NDkwNTQ1NDJ9.yH3ZKWczcrbft7yK9vcXsey16WQXDMK-H9B4xuJeVfA</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:23 PM</td>
+					<td class='step-details'>Login successful, user name = himanshu</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:23 PM</td>
+					<td class='step-details'>Deleting user = {"password":"77777777","name":"himanshu","email":"himan@deloitte.com","age":29}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:25 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:25 PM</td>
+					<td class='step-details'>user login json data = {"password":"66666666","email":"moha@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:26 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2OTE2YTc0ZTAwMTc0NjFkN2MiLCJpYXQiOjE2NDkwNTQ1NDZ9.17xl7ePrzu3xeg9LPA-s0aG45ENhhKekERPHDWr5e7s</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:26 PM</td>
+					<td class='step-details'>Login successful, user name = Mohammed Saquib</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:26 PM</td>
+					<td class='step-details'>Deleting user = {"password":"66666666","name":"Mohammed Saquib","email":"moha@deloitte.com","age":21}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:28 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:28 PM</td>
+					<td class='step-details'>user login json data = {"password":"55555555","email":"kritik@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:29 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2YjE2YTc0ZTAwMTc0NjFkN2UiLCJpYXQiOjE2NDkwNTQ1NDl9.suk66liFSQnHAQI_V6Jru--eG2k-0PmUwoNHLcITuYE</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:29 PM</td>
+					<td class='step-details'>Login successful, user name = kritik bansal</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:29 PM</td>
+					<td class='step-details'>Deleting user = {"password":"55555555","name":"kritik bansal","email":"kritik@deloitte.com","age":28}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:31 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:31 PM</td>
+					<td class='step-details'>user login json data = {"password":"44444444","email":"dinky@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:33 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2YzE2YTc0ZTAwMTc0NjFkODAiLCJpYXQiOjE2NDkwNTQ1NTN9.xPG1XkQ5nOfyGYvLJafQMM2laMkyBnmEMBOaYlPLdvQ</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:33 PM</td>
+					<td class='step-details'>Login successful, user name = dinky arsani</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:33 PM</td>
+					<td class='step-details'>Deleting user = {"password":"44444444","name":"dinky arsani","email":"dinky@deloitte.com","age":29}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:35 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:35 PM</td>
+					<td class='step-details'>user login json data = {"password":"33333333","email":"britisha@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:37 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2ZTE2YTc0ZTAwMTc0NjFkODIiLCJpYXQiOjE2NDkwNTQ1NTZ9.9zaeqT4mMTg6FVy48tXnMq_fKW7zFLdFMFLxOhn7Cyo</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:37 PM</td>
+					<td class='step-details'>Login successful, user name = britisha prasad singh</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:37 PM</td>
+					<td class='step-details'>Deleting user = {"password":"33333333","name":"britisha prasad singh","email":"britisha@deloitte.com","age":23}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:38 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:38 PM</td>
+					<td class='step-details'>user login json data = {"password":"22222222","email":"tthakur@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:40 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MDE2YTc0ZTAwMTc0NjFkODQiLCJpYXQiOjE2NDkwNTQ1NjB9.webNagBBmVOP073Lo_DeF5Ne-bcTW_9XYuV93VxlPpE</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:40 PM</td>
+					<td class='step-details'>Login successful, user name = Sagar Kumar Thakur</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:40 PM</td>
+					<td class='step-details'>Deleting user = {"password":"22222222","name":"Sagar Kumar Thakur","email":"tthakur@deloitte.com","age":23}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:42 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:42 PM</td>
+					<td class='step-details'>user login json data = {"password":"11111111","email":"TDHURWE@DELOITTE.COM"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:44 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MTE2YTc0ZTAwMTc0NjFkODYiLCJpYXQiOjE2NDkwNTQ1NjR9.YOxbhgpDrAwhs5GcqeJZkwj_yhOwErvOK7JnVIY5a8w</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:44 PM</td>
+					<td class='step-details'>Login successful, user name = Tarun Kumar Dhurwe</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:44 PM</td>
+					<td class='step-details'>Deleting user = {"password":"11111111","name":"Tarun Kumar Dhurwe","email":"TDHURWE@DELOITTE.COM","age":24}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:46 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:46 PM</td>
+					<td class='step-details'>user login json data = {"password":"10000000","email":"saravana@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:47 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MzE2YTc0ZTAwMTc0NjFkODgiLCJpYXQiOjE2NDkwNTQ1Njd9.-V75DK5Rl4NCDv71rX4DqibR7LlEir5JGNqCwYvk1v0</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:47 PM</td>
+					<td class='step-details'>Login successful, user name = k saravanakumar</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:47 PM</td>
+					<td class='step-details'>Deleting user = {"password":"10000000","name":"k saravanakumar","email":"saravana@deloitte.com","age":24}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:49 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:49 PM</td>
+					<td class='step-details'>user login json data = {"password":"10000001","email":"darshan@deloitte.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:51 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3NTE2YTc0ZTAwMTc0NjFkOGEiLCJpYXQiOjE2NDkwNTQ1NzF9.5NFpL3xbglUkhes6ukPjuFGbGYfZg78GAKIK--tibo0</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:51 PM</td>
+					<td class='step-details'>Login successful, user name = darshan</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:51 PM</td>
+					<td class='step-details'>Deleting user = {"password":"10000001","name":"darshan","email":"darshan@deloitte.com","age":22}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:53 PM</td>
+					<td class='step-details'>Login Test</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>12:12:53 PM</td>
+					<td class='step-details'>user login json data = {"password":"10000010","email":"apurwa@gmail.com"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:54 PM</td>
+					<td class='step-details'>Session token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3NzE2YTc0ZTAwMTc0NjFkOGMiLCJpYXQiOjE2NDkwNTQ1NzR9.0bH-Hul44o7_nPcYr2olD6I8WkDLvHtJzMVbPTjZu7c</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:12:54 PM</td>
+					<td class='step-details'>Login successful, user name = apurwa</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:12:54 PM</td>
+					<td class='step-details'>Deleting user = {"password":"10000010","name":"apurwa","email":"apurwa@gmail.com","age":22}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>7</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>177</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Apr 4, 2022 12:10:33 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Apr 4, 2022 12:12:56 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 2m 22s+818ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 4,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 2,
+				skipParent: 0,
+				exceptionsParent: 3,
+				
+				passChild: 52,
+				failChild: 3,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 13,
+				skipChild: 0,
+				infoChild: 109,
+				exceptionsChild: 54,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,245 @@
+2022-10-04 12:10:34.090 [main] INFO  extentController - register start
+2022-10-04 12:10:35.245 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-10-04 12:10:35.249 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-10-04 12:10:35.254 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-10-04 12:10:35.256 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-10-04 12:10:35.804 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-10-04 12:10:35.804 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-10-04 12:10:35.996 [main] DEBUG extentController - {"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}
+2022-10-04 12:10:35.997 [main] DEBUG extentController - {"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}
+2022-10-04 12:10:39.507 [main] INFO  extentController - User successfully registered
+2022-10-04 12:10:39.507 [main] DEBUG extentController - {"password":"1.2345679E7","name":"Aditya Kumar","email":"ADITYAKUMAR72@DELOITTE.COM","age":27}
+2022-10-04 12:10:39.507 [main] DEBUG extentController - {"password":"1.2345679E7","name":"Aditya Kumar","email":"ADITYAKUMAR72@DELOITTE.COM","age":27}
+2022-10-04 12:10:41.294 [main] INFO  extentController - User successfully registered
+2022-10-04 12:10:41.294 [main] DEBUG extentController - {"password":"1.234568E7","name":"Deepak Maharajan M","email":"DMAHARAJANM@DELOITTE.COM","age":27}
+2022-10-04 12:10:41.295 [main] DEBUG extentController - {"password":"1.234568E7","name":"Deepak Maharajan M","email":"DMAHARAJANM@DELOITTE.COM","age":27}
+2022-10-04 12:10:43.048 [main] INFO  extentController - User successfully registered
+2022-10-04 12:10:43.048 [main] DEBUG extentController - {"password":"1.2345681E7","name":"Kirubakaran S","email":"KIRUS@DELOITTE.COM","age":29}
+2022-10-04 12:10:43.048 [main] DEBUG extentController - {"password":"1.2345681E7","name":"Kirubakaran S","email":"KIRUS@DELOITTE.COM","age":29}
+2022-10-04 12:10:44.729 [main] INFO  extentController - User successfully registered
+2022-10-04 12:10:44.729 [main] DEBUG extentController - {"password":"1.2345682E7","name":"CHAMAKURI SAI KUMAR","email":"CHAMKUMAR@DELOITTE.COM","age":20}
+2022-10-04 12:10:44.729 [main] DEBUG extentController - {"password":"1.2345682E7","name":"CHAMAKURI SAI KUMAR","email":"CHAMKUMAR@DELOITTE.COM","age":20}
+2022-10-04 12:10:46.330 [main] INFO  extentController - User successfully registered
+2022-10-04 12:10:46.330 [main] DEBUG extentController - {"password":"99999999","name":"m suhas","email":"Suhas@DELOITTE.com","age":21}
+2022-10-04 12:10:46.330 [main] DEBUG extentController - {"password":"99999999","name":"m suhas","email":"Suhas@DELOITTE.com","age":21}
+2022-10-04 12:10:47.674 [main] WARN  extentController - User already present with same email i.e. Suhas@DELOITTE.com
+2022-10-04 12:10:47.674 [main] DEBUG extentController - {"password":"88888888","name":"priyanka sharma","email":"priya@deloitte.com","age":30}
+2022-10-04 12:10:47.674 [main] DEBUG extentController - {"password":"88888888","name":"priyanka sharma","email":"priya@deloitte.com","age":30}
+2022-10-04 12:10:49.020 [main] WARN  extentController - User already present with same email i.e. priya@deloitte.com
+2022-10-04 12:10:49.020 [main] DEBUG extentController - {"password":"77777777","name":"himanshu","email":"himan@deloitte.com","age":29}
+2022-10-04 12:10:49.020 [main] DEBUG extentController - {"password":"77777777","name":"himanshu","email":"himan@deloitte.com","age":29}
+2022-10-04 12:10:50.310 [main] WARN  extentController - User already present with same email i.e. himan@deloitte.com
+2022-10-04 12:10:50.310 [main] DEBUG extentController - {"password":"66666666","name":"Mohammed Saquib","email":"moha@deloitte.com","age":21}
+2022-10-04 12:10:50.310 [main] DEBUG extentController - {"password":"66666666","name":"Mohammed Saquib","email":"moha@deloitte.com","age":21}
+2022-10-04 12:10:51.720 [main] WARN  extentController - User already present with same email i.e. moha@deloitte.com
+2022-10-04 12:10:51.720 [main] DEBUG extentController - {"password":"55555555","name":"kritik bansal","email":"kritik@deloitte.com","age":28}
+2022-10-04 12:10:51.720 [main] DEBUG extentController - {"password":"55555555","name":"kritik bansal","email":"kritik@deloitte.com","age":28}
+2022-10-04 12:10:53.008 [main] WARN  extentController - User already present with same email i.e. kritik@deloitte.com
+2022-10-04 12:10:53.008 [main] DEBUG extentController - {"password":"44444444","name":"dinky arsani","email":"dinky@deloitte.com","age":29}
+2022-10-04 12:10:53.008 [main] DEBUG extentController - {"password":"44444444","name":"dinky arsani","email":"dinky@deloitte.com","age":29}
+2022-10-04 12:10:54.355 [main] WARN  extentController - User already present with same email i.e. dinky@deloitte.com
+2022-10-04 12:10:54.355 [main] DEBUG extentController - {"password":"33333333","name":"britisha prasad singh","email":"britisha@deloitte.com","age":23}
+2022-10-04 12:10:54.355 [main] DEBUG extentController - {"password":"33333333","name":"britisha prasad singh","email":"britisha@deloitte.com","age":23}
+2022-10-04 12:10:55.818 [main] WARN  extentController - User already present with same email i.e. britisha@deloitte.com
+2022-10-04 12:10:55.818 [main] DEBUG extentController - {"password":"22222222","name":"Sagar Kumar Thakur","email":"tthakur@deloitte.com","age":23}
+2022-10-04 12:10:55.818 [main] DEBUG extentController - {"password":"22222222","name":"Sagar Kumar Thakur","email":"tthakur@deloitte.com","age":23}
+2022-10-04 12:10:57.136 [main] WARN  extentController - User already present with same email i.e. tthakur@deloitte.com
+2022-10-04 12:10:57.136 [main] DEBUG extentController - {"password":"11111111","name":"Tarun Kumar Dhurwe","email":"TDHURWE@DELOITTE.COM","age":24}
+2022-10-04 12:10:57.136 [main] DEBUG extentController - {"password":"11111111","name":"Tarun Kumar Dhurwe","email":"TDHURWE@DELOITTE.COM","age":24}
+2022-10-04 12:10:58.564 [main] WARN  extentController - User already present with same email i.e. TDHURWE@DELOITTE.COM
+2022-10-04 12:10:58.564 [main] DEBUG extentController - {"password":"10000000","name":"k saravanakumar","email":"saravana@deloitte.com","age":24}
+2022-10-04 12:10:58.564 [main] DEBUG extentController - {"password":"10000000","name":"k saravanakumar","email":"saravana@deloitte.com","age":24}
+2022-10-04 12:10:59.926 [main] WARN  extentController - User already present with same email i.e. saravana@deloitte.com
+2022-10-04 12:10:59.926 [main] DEBUG extentController - {"password":"10000001","name":"darshan","email":"darshan@deloitte.com","age":22}
+2022-10-04 12:10:59.926 [main] DEBUG extentController - {"password":"10000001","name":"darshan","email":"darshan@deloitte.com","age":22}
+2022-11-04 12:11:01.420 [main] WARN  extentController - User already present with same email i.e. darshan@deloitte.com
+2022-11-04 12:11:01.420 [main] DEBUG extentController - {"password":"10000010","name":"apurwa","email":"apurwa@gmail.com","age":22}
+2022-11-04 12:11:01.420 [main] DEBUG extentController - {"password":"10000010","name":"apurwa","email":"apurwa@gmail.com","age":22}
+2022-11-04 12:11:02.748 [main] WARN  extentController - User already present with same email i.e. apurwa@gmail.com
+2022-11-04 12:11:02.748 [main] INFO  extentController - register success
+2022-11-04 12:11:02.748 [main] INFO  extentController - login1 start
+2022-11-04 12:11:02.764 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:02.764 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:02.764 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:02.764 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:02.781 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:02.781 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:02.805 [main] INFO  extentController - Login Test
+2022-11-04 12:11:02.805 [main] DEBUG extentController - user login json data = {"password":"1.2345681E7","email":"KIRUS@DELOITTE.COM"}
+2022-11-04 12:11:04.966 [main] DEBUG extentController - Login status code = 200
+2022-11-04 12:11:04.966 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:44.113Z","__v":2,"name":"Kirubakaran S","_id":"624a92ec85a784001776f467","age":29,"email":"kirus@deloitte.com","updatedAt":"2022-04-04T06:41:04.697Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYzg1YTc4NDAwMTc3NmY0NjciLCJpYXQiOjE2NDkwNTQ0NjR9.0wOAZLA43AniCRqbCrV6S5stRwvDZAUi2ceTFK1A-RQ"}
+2022-11-04 12:11:04.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:04.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:04.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:04.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:05.002 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:05.003 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:05.016 [main] INFO  extentController - Adding task =>{"description":"add_task_1"}
+2022-11-04 12:11:06.726 [main] INFO  extentController - Adding task =>{"description":"add_task_2"}
+2022-11-04 12:11:08.399 [main] INFO  extentController - Adding task =>{"description":"add_task_3"}
+2022-11-04 12:11:10.141 [main] INFO  extentController - Adding task =>{"description":"add_task_4"}
+2022-11-04 12:11:11.780 [main] INFO  extentController - Adding task =>{"description":"add_task_5"}
+2022-11-04 12:11:13.337 [main] INFO  extentController - Adding task =>{"description":"add_task_6"}
+2022-11-04 12:11:14.985 [main] INFO  extentController - Adding task =>{"description":"add_task_7"}
+2022-11-04 12:11:16.575 [main] INFO  extentController - Adding task =>{"description":"add_task_8"}
+2022-11-04 12:11:18.098 [main] INFO  extentController - Adding task =>{"description":"add_task_9"}
+2022-11-04 12:11:19.676 [main] INFO  extentController - Adding task =>{"description":"add_task_10"}
+2022-11-04 12:11:21.369 [main] INFO  extentController - Adding task =>{"description":"add_task_11"}
+2022-11-04 12:11:22.901 [main] INFO  extentController - Adding task =>{"description":"add_task_12"}
+2022-11-04 12:11:24.460 [main] INFO  extentController - Adding task =>{"description":"add_task_13"}
+2022-11-04 12:11:26.050 [main] INFO  extentController - Adding task =>{"description":"add_task_14"}
+2022-11-04 12:11:27.758 [main] INFO  extentController - Adding task =>{"description":"add_task_15"}
+2022-11-04 12:11:29.401 [main] INFO  extentController - Adding task =>{"description":"add_task_16"}
+2022-11-04 12:11:31.074 [main] INFO  extentController - Adding task =>{"description":"add_task_17"}
+2022-11-04 12:11:32.785 [main] INFO  extentController - Adding task =>{"description":"add_task_18"}
+2022-11-04 12:11:34.326 [main] INFO  extentController - Adding task =>{"description":"add_task_19"}
+2022-11-04 12:11:36.029 [main] INFO  extentController - Adding task =>{"description":"add_task_20"}
+2022-11-04 12:11:37.700 [main] INFO  extentController - Adding task =>{"description":"add_task_21"}
+2022-11-04 12:11:39.345 [main] INFO  extentController - Adding task =>{"description":"add_task_22"}
+2022-11-04 12:11:41.096 [main] INFO  extentController - Adding task =>{"description":"add_task_23"}
+2022-11-04 12:11:42.627 [main] INFO  extentController - Getting task data by Page limit, 2
+2022-11-04 12:11:44.366 [main] INFO  extentController - Validating get response data
+2022-11-04 12:11:44.367 [main] DEBUG extentController - Get response
+2022-11-04 12:11:44.367 [main] DEBUG extentController - {"count":2,"data":[{"completed":false,"_id":"624a930285a784001776f492","description":"add_task_1","owner":"624a92ec85a784001776f467","createdAt":"2022-04-04T06:41:06.448Z","updatedAt":"2022-04-04T06:41:06.448Z","__v":0},{"completed":false,"_id":"624a930485a784001776f493","description":"add_task_2","owner":"624a92ec85a784001776f467","createdAt":"2022-04-04T06:41:08.070Z","updatedAt":"2022-04-04T06:41:08.070Z","__v":0}]}
+2022-11-04 12:11:44.367 [main] INFO  extentController - login1 success
+2022-11-04 12:11:44.367 [main] INFO  extentController - registerSingleUser_negativeTest start
+2022-11-04 12:11:44.373 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:44.373 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:44.373 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:44.380 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:44.411 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:44.412 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:44.431 [main] DEBUG extentController - {"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}
+2022-11-04 12:11:48.122 [main] WARN  extentController - User already present with same email i.e. MVSUHAS@DELOITTE.COM
+2022-11-04 12:11:48.132 [main] INFO  extentController - neg_login_Test start
+2022-11-04 12:11:48.146 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:48.149 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:48.150 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:48.151 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:48.179 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:48.179 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:48.193 [main] INFO  extentController - Login Test
+2022-11-04 12:11:48.196 [main] DEBUG extentController - user login json data = {"password":"10000002","email":"srijochakraborty@deloitte.com"}
+2022-11-04 12:11:50.079 [main] DEBUG extentController - Login status code = 400
+2022-11-04 12:11:50.081 [main] INFO  extentController - negAddTask start
+2022-11-04 12:11:50.099 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:50.108 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:50.109 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:50.109 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:50.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:50.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:50.150 [main] INFO  extentController - Login Test
+2022-11-04 12:11:50.157 [main] DEBUG extentController - user login json data = {"password":"1.2345678E7","email":"MVSUHAS@DELOITTE.COM"}
+2022-11-04 12:11:52.351 [main] DEBUG extentController - Login status code = 200
+2022-11-04 12:11:52.351 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:38.895Z","__v":2,"name":"M.V.Suhas","_id":"624a92e685a784001776f456","age":24,"email":"mvsuhas@deloitte.com","updatedAt":"2022-04-04T06:41:52.025Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlNjg1YTc4NDAwMTc3NmY0NTYiLCJpYXQiOjE2NDkwNTQ1MTJ9.e81lgdMhiDCaIdUJyxYu5T22oLb0aH_WQlYjWF4M21I"}
+2022-11-04 12:11:52.351 [main] INFO  extentController - Adding task =>{"desc":"add_task"}
+2022-11-04 12:11:53.896 [main] INFO  extentController - deleteAllUsers start
+2022-11-04 12:11:53.906 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-11-04 12:11:53.914 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-11-04 12:11:53.917 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-11-04 12:11:53.917 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-11-04 12:11:53.936 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:53.936 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-11-04 12:11:53.956 [main] INFO  extentController - Login Test
+2022-11-04 12:11:53.956 [main] DEBUG extentController - user login json data = {"password":"1.2345678E7","email":"MVSUHAS@DELOITTE.COM"}
+2022-11-04 12:11:56.107 [main] DEBUG extentController - Login status code = 200
+2022-11-04 12:11:56.107 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:38.895Z","__v":3,"name":"M.V.Suhas","_id":"624a92e685a784001776f456","age":24,"email":"mvsuhas@deloitte.com","updatedAt":"2022-04-04T06:41:55.830Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlNjg1YTc4NDAwMTc3NmY0NTYiLCJpYXQiOjE2NDkwNTQ1MTV9.3CCw1ZduiVHSpv9oP4LcndpqWPDRSMaMjDjjZY4M0OE"}
+2022-11-04 12:11:56.114 [main] INFO  extentController - Deleting user = {"password":"1.2345678E7","name":"M.V.Suhas","email":"MVSUHAS@DELOITTE.COM","age":24}
+2022-11-04 12:11:58.097 [main] DEBUG extentController - 200
+2022-11-04 12:11:58.097 [main] INFO  extentController - Login Test
+2022-11-04 12:11:58.097 [main] DEBUG extentController - user login json data = {"password":"1.2345679E7","email":"ADITYAKUMAR72@DELOITTE.COM"}
+2022-11-04 12:11:59.767 [main] DEBUG extentController - Login status code = 200
+2022-11-04 12:11:59.767 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:40.749Z","__v":2,"name":"Aditya Kumar","_id":"624a92e885a784001776f45e","age":27,"email":"adityakumar72@deloitte.com","updatedAt":"2022-04-04T06:41:59.464Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlODg1YTc4NDAwMTc3NmY0NWUiLCJpYXQiOjE2NDkwNTQ1MTl9.bBUvSL6T0p9L2PfdxtS6oIldxUl_CSDBrW4JjaKEdt0"}
+2022-11-04 12:11:59.767 [main] INFO  extentController - Deleting user = {"password":"1.2345679E7","name":"Aditya Kumar","email":"ADITYAKUMAR72@DELOITTE.COM","age":27}
+2022-12-04 12:12:01.572 [main] DEBUG extentController - 200
+2022-12-04 12:12:01.573 [main] INFO  extentController - Login Test
+2022-12-04 12:12:01.573 [main] DEBUG extentController - user login json data = {"password":"1.234568E7","email":"DMAHARAJANM@DELOITTE.COM"}
+2022-12-04 12:12:03.238 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:03.238 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:42.354Z","__v":2,"name":"Deepak Maharajan M","_id":"624a92ea85a784001776f463","age":27,"email":"dmaharajanm@deloitte.com","updatedAt":"2022-04-04T06:42:02.947Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYTg1YTc4NDAwMTc3NmY0NjMiLCJpYXQiOjE2NDkwNTQ1MjJ9.tRbzHaUql1atHUfiHuh0hpA2Cx9NpF5dZriV3Z1yyw0"}
+2022-12-04 12:12:03.238 [main] INFO  extentController - Deleting user = {"password":"1.234568E7","name":"Deepak Maharajan M","email":"DMAHARAJANM@DELOITTE.COM","age":27}
+2022-12-04 12:12:05.031 [main] DEBUG extentController - 200
+2022-12-04 12:12:05.031 [main] INFO  extentController - Login Test
+2022-12-04 12:12:05.031 [main] DEBUG extentController - user login json data = {"password":"1.2345681E7","email":"KIRUS@DELOITTE.COM"}
+2022-12-04 12:12:06.632 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:06.632 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:44.113Z","__v":3,"name":"Kirubakaran S","_id":"624a92ec85a784001776f467","age":29,"email":"kirus@deloitte.com","updatedAt":"2022-04-04T06:42:06.347Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlYzg1YTc4NDAwMTc3NmY0NjciLCJpYXQiOjE2NDkwNTQ1MjZ9.pnIf0mkuewnJ6qB3Vfyorlrof7VBE5buOblyFd-qZlE"}
+2022-12-04 12:12:06.632 [main] INFO  extentController - Deleting user = {"password":"1.2345681E7","name":"Kirubakaran S","email":"KIRUS@DELOITTE.COM","age":29}
+2022-12-04 12:12:09.257 [main] DEBUG extentController - 200
+2022-12-04 12:12:09.257 [main] INFO  extentController - Login Test
+2022-12-04 12:12:09.257 [main] DEBUG extentController - user login json data = {"password":"1.2345682E7","email":"CHAMKUMAR@DELOITTE.COM"}
+2022-12-04 12:12:10.901 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:10.901 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-04T06:40:45.803Z","__v":2,"name":"CHAMAKURI SAI KUMAR","_id":"624a92ed85a784001776f46c","age":20,"email":"chamkumar@deloitte.com","updatedAt":"2022-04-04T06:42:10.535Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOTJlZDg1YTc4NDAwMTc3NmY0NmMiLCJpYXQiOjE2NDkwNTQ1MzB9.e2reQXDdKVTBaThPLRtXS5vU4XLajcFSX5y-OXPWY-s"}
+2022-12-04 12:12:10.903 [main] INFO  extentController - Deleting user = {"password":"1.2345682E7","name":"CHAMAKURI SAI KUMAR","email":"CHAMKUMAR@DELOITTE.COM","age":20}
+2022-12-04 12:12:13.455 [main] DEBUG extentController - 200
+2022-12-04 12:12:13.455 [main] INFO  extentController - Login Test
+2022-12-04 12:12:13.455 [main] DEBUG extentController - user login json data = {"password":"99999999","email":"Suhas@DELOITTE.com"}
+2022-12-04 12:12:15.101 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:15.102 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:16.540Z","__v":2,"name":"m suhas","_id":"624a0e6416a74e0017461d76","age":21,"email":"suhas@deloitte.com","updatedAt":"2022-04-04T06:42:14.717Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2NDE2YTc0ZTAwMTc0NjFkNzYiLCJpYXQiOjE2NDkwNTQ1MzR9.rSAyl_MwTqaCpxW0jIs6K25hmRjYb9z7tvJZoxS_deQ"}
+2022-12-04 12:12:15.102 [main] INFO  extentController - Deleting user = {"password":"99999999","name":"m suhas","email":"Suhas@DELOITTE.com","age":21}
+2022-12-04 12:12:17.041 [main] DEBUG extentController - 200
+2022-12-04 12:12:17.041 [main] INFO  extentController - Login Test
+2022-12-04 12:12:17.043 [main] DEBUG extentController - user login json data = {"password":"88888888","email":"priya@deloitte.com"}
+2022-12-04 12:12:19.699 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:19.699 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:18.358Z","__v":2,"name":"priyanka sharma","_id":"624a0e6616a74e0017461d78","age":30,"email":"priya@deloitte.com","updatedAt":"2022-04-04T06:42:19.315Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2NjE2YTc0ZTAwMTc0NjFkNzgiLCJpYXQiOjE2NDkwNTQ1Mzl9.BzTjhUvt9EBvURgWbzU8l_5QZCCZVjPb_StxOk-wjWw"}
+2022-12-04 12:12:19.707 [main] INFO  extentController - Deleting user = {"password":"88888888","name":"priyanka sharma","email":"priya@deloitte.com","age":30}
+2022-12-04 12:12:21.588 [main] DEBUG extentController - 200
+2022-12-04 12:12:21.588 [main] INFO  extentController - Login Test
+2022-12-04 12:12:21.588 [main] DEBUG extentController - user login json data = {"password":"77777777","email":"himan@deloitte.com"}
+2022-12-04 12:12:23.188 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:23.188 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:20.059Z","__v":2,"name":"himanshu","_id":"624a0e6816a74e0017461d7a","age":29,"email":"himan@deloitte.com","updatedAt":"2022-04-04T06:42:22.877Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2ODE2YTc0ZTAwMTc0NjFkN2EiLCJpYXQiOjE2NDkwNTQ1NDJ9.yH3ZKWczcrbft7yK9vcXsey16WQXDMK-H9B4xuJeVfA"}
+2022-12-04 12:12:23.188 [main] INFO  extentController - Deleting user = {"password":"77777777","name":"himanshu","email":"himan@deloitte.com","age":29}
+2022-12-04 12:12:25.049 [main] DEBUG extentController - 200
+2022-12-04 12:12:25.049 [main] INFO  extentController - Login Test
+2022-12-04 12:12:25.049 [main] DEBUG extentController - user login json data = {"password":"66666666","email":"moha@deloitte.com"}
+2022-12-04 12:12:26.633 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:26.633 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:21.633Z","__v":2,"name":"Mohammed Saquib","_id":"624a0e6916a74e0017461d7c","age":21,"email":"moha@deloitte.com","updatedAt":"2022-04-04T06:42:26.325Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2OTE2YTc0ZTAwMTc0NjFkN2MiLCJpYXQiOjE2NDkwNTQ1NDZ9.17xl7ePrzu3xeg9LPA-s0aG45ENhhKekERPHDWr5e7s"}
+2022-12-04 12:12:26.636 [main] INFO  extentController - Deleting user = {"password":"66666666","name":"Mohammed Saquib","email":"moha@deloitte.com","age":21}
+2022-12-04 12:12:28.419 [main] DEBUG extentController - 200
+2022-12-04 12:12:28.419 [main] INFO  extentController - Login Test
+2022-12-04 12:12:28.421 [main] DEBUG extentController - user login json data = {"password":"55555555","email":"kritik@deloitte.com"}
+2022-12-04 12:12:29.930 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:29.930 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:23.274Z","__v":2,"name":"kritik bansal","_id":"624a0e6b16a74e0017461d7e","age":28,"email":"kritik@deloitte.com","updatedAt":"2022-04-04T06:42:29.634Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2YjE2YTc0ZTAwMTc0NjFkN2UiLCJpYXQiOjE2NDkwNTQ1NDl9.suk66liFSQnHAQI_V6Jru--eG2k-0PmUwoNHLcITuYE"}
+2022-12-04 12:12:29.931 [main] INFO  extentController - Deleting user = {"password":"55555555","name":"kritik bansal","email":"kritik@deloitte.com","age":28}
+2022-12-04 12:12:31.841 [main] DEBUG extentController - 200
+2022-12-04 12:12:31.841 [main] INFO  extentController - Login Test
+2022-12-04 12:12:31.841 [main] DEBUG extentController - user login json data = {"password":"44444444","email":"dinky@deloitte.com"}
+2022-12-04 12:12:33.653 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:33.653 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:24.828Z","__v":2,"name":"dinky arsani","_id":"624a0e6c16a74e0017461d80","age":29,"email":"dinky@deloitte.com","updatedAt":"2022-04-04T06:42:33.068Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2YzE2YTc0ZTAwMTc0NjFkODAiLCJpYXQiOjE2NDkwNTQ1NTN9.xPG1XkQ5nOfyGYvLJafQMM2laMkyBnmEMBOaYlPLdvQ"}
+2022-12-04 12:12:33.653 [main] INFO  extentController - Deleting user = {"password":"44444444","name":"dinky arsani","email":"dinky@deloitte.com","age":29}
+2022-12-04 12:12:35.406 [main] DEBUG extentController - 200
+2022-12-04 12:12:35.406 [main] INFO  extentController - Login Test
+2022-12-04 12:12:35.406 [main] DEBUG extentController - user login json data = {"password":"33333333","email":"britisha@deloitte.com"}
+2022-12-04 12:12:37.024 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:37.024 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:26.453Z","__v":2,"name":"britisha prasad singh","_id":"624a0e6e16a74e0017461d82","age":23,"email":"britisha@deloitte.com","updatedAt":"2022-04-04T06:42:36.639Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU2ZTE2YTc0ZTAwMTc0NjFkODIiLCJpYXQiOjE2NDkwNTQ1NTZ9.9zaeqT4mMTg6FVy48tXnMq_fKW7zFLdFMFLxOhn7Cyo"}
+2022-12-04 12:12:37.024 [main] INFO  extentController - Deleting user = {"password":"33333333","name":"britisha prasad singh","email":"britisha@deloitte.com","age":23}
+2022-12-04 12:12:38.877 [main] DEBUG extentController - 200
+2022-12-04 12:12:38.877 [main] INFO  extentController - Login Test
+2022-12-04 12:12:38.877 [main] DEBUG extentController - user login json data = {"password":"22222222","email":"tthakur@deloitte.com"}
+2022-12-04 12:12:40.444 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:40.444 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:28.113Z","__v":2,"name":"Sagar Kumar Thakur","_id":"624a0e7016a74e0017461d84","age":23,"email":"tthakur@deloitte.com","updatedAt":"2022-04-04T06:42:40.144Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MDE2YTc0ZTAwMTc0NjFkODQiLCJpYXQiOjE2NDkwNTQ1NjB9.webNagBBmVOP073Lo_DeF5Ne-bcTW_9XYuV93VxlPpE"}
+2022-12-04 12:12:40.444 [main] INFO  extentController - Deleting user = {"password":"22222222","name":"Sagar Kumar Thakur","email":"tthakur@deloitte.com","age":23}
+2022-12-04 12:12:42.389 [main] DEBUG extentController - 200
+2022-12-04 12:12:42.389 [main] INFO  extentController - Login Test
+2022-12-04 12:12:42.389 [main] DEBUG extentController - user login json data = {"password":"11111111","email":"TDHURWE@DELOITTE.COM"}
+2022-12-04 12:12:44.325 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:44.326 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:29.686Z","__v":2,"name":"Tarun Kumar Dhurwe","_id":"624a0e7116a74e0017461d86","age":24,"email":"tdhurwe@deloitte.com","updatedAt":"2022-04-04T06:42:44.019Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MTE2YTc0ZTAwMTc0NjFkODYiLCJpYXQiOjE2NDkwNTQ1NjR9.YOxbhgpDrAwhs5GcqeJZkwj_yhOwErvOK7JnVIY5a8w"}
+2022-12-04 12:12:44.326 [main] INFO  extentController - Deleting user = {"password":"11111111","name":"Tarun Kumar Dhurwe","email":"TDHURWE@DELOITTE.COM","age":24}
+2022-12-04 12:12:46.241 [main] DEBUG extentController - 200
+2022-12-04 12:12:46.241 [main] INFO  extentController - Login Test
+2022-12-04 12:12:46.241 [main] DEBUG extentController - user login json data = {"password":"10000000","email":"saravana@deloitte.com"}
+2022-12-04 12:12:47.808 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:47.808 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:31.878Z","__v":2,"name":"k saravanakumar","_id":"624a0e7316a74e0017461d88","age":24,"email":"saravana@deloitte.com","updatedAt":"2022-04-04T06:42:47.500Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3MzE2YTc0ZTAwMTc0NjFkODgiLCJpYXQiOjE2NDkwNTQ1Njd9.-V75DK5Rl4NCDv71rX4DqibR7LlEir5JGNqCwYvk1v0"}
+2022-12-04 12:12:47.808 [main] INFO  extentController - Deleting user = {"password":"10000000","name":"k saravanakumar","email":"saravana@deloitte.com","age":24}
+2022-12-04 12:12:49.679 [main] DEBUG extentController - 200
+2022-12-04 12:12:49.682 [main] INFO  extentController - Login Test
+2022-12-04 12:12:49.682 [main] DEBUG extentController - user login json data = {"password":"10000001","email":"darshan@deloitte.com"}
+2022-12-04 12:12:51.467 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:51.468 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:33.513Z","__v":2,"name":"darshan","_id":"624a0e7516a74e0017461d8a","age":22,"email":"darshan@deloitte.com","updatedAt":"2022-04-04T06:42:51.074Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3NTE2YTc0ZTAwMTc0NjFkOGEiLCJpYXQiOjE2NDkwNTQ1NzF9.5NFpL3xbglUkhes6ukPjuFGbGYfZg78GAKIK--tibo0"}
+2022-12-04 12:12:51.469 [main] INFO  extentController - Deleting user = {"password":"10000001","name":"darshan","email":"darshan@deloitte.com","age":22}
+2022-12-04 12:12:53.296 [main] DEBUG extentController - 200
+2022-12-04 12:12:53.296 [main] INFO  extentController - Login Test
+2022-12-04 12:12:53.296 [main] DEBUG extentController - user login json data = {"password":"10000010","email":"apurwa@gmail.com"}
+2022-12-04 12:12:54.949 [main] DEBUG extentController - Login status code = 200
+2022-12-04 12:12:54.949 [main] DEBUG extentController - response object json data = {"user":{"createdAt":"2022-04-03T21:15:35.355Z","__v":2,"name":"apurwa","_id":"624a0e7716a74e0017461d8c","age":22,"email":"apurwa@gmail.com","updatedAt":"2022-04-04T06:42:54.536Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhMGU3NzE2YTc0ZTAwMTc0NjFkOGMiLCJpYXQiOjE2NDkwNTQ1NzR9.0bH-Hul44o7_nPcYr2olD6I8WkDLvHtJzMVbPTjZu7c"}
+2022-12-04 12:12:54.949 [main] INFO  extentController - Deleting user = {"password":"10000010","name":"apurwa","email":"apurwa@gmail.com","age":22}
+2022-12-04 12:12:56.725 [main] DEBUG extentController - 200
+2022-12-04 12:12:56.725 [main] INFO  extentController - deleteAllUsers success
